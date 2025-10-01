@@ -86,46 +86,51 @@ function Newsletters() {
             <button className="notifyMe">Read More</button>
           </div>
 
-          <div className="main2">
-            <h3>
-              <FaChartLine
-                style={{ marginRight: "0.5rem", color: "#ff6a00" }}
-              />
-              Police Traffic Stop Analysis
-            </h3>
-            <span>Updated Monthly | Public Safety Intelligence</span>
-
-            <p>
-              This analysis examines police traffic stop data to uncover
-              patterns, identify hotspots, and evaluate enforcement trends.
-              Insights help improve public safety, reduce congestion, and inform
-              policy decisions.
-            </p>
-
-            <ul className="insightsList">
-              <li>
-                <FaMapMarkedAlt
-                  style={{ color: "#ff6a00", marginRight: "0.5rem" }}
+          <a href="https://steelebender.github.io/policerep/">
+            {" "}
+            <div className="main2">
+              <h3>
+                <FaChartLine
+                  style={{ marginRight: "0.5rem", color: "#ff6a00" }}
                 />
-                <strong>Location Hotspots:</strong> Identify high-frequency
-                traffic stop areas.
-              </li>
-              <li>
-                <FaClock style={{ color: "#ff6a00", marginRight: "0.5rem" }} />
-                <strong>Time Patterns:</strong> Analyze time-of-day and
-                day-of-week trends.
-              </li>
-              <li>
-                <FaUserCheck
-                  style={{ color: "#ff6a00", marginRight: "0.5rem" }}
-                />
-                <strong>Demographics:</strong> Evaluate stop statistics across
-                age, gender, and vehicle type.
-              </li>
-            </ul>
+                Police Traffic Stop Analysis
+              </h3>
+              <span>Updated Monthly | Public Safety Intelligence</span>
 
-            <button className="notifyMe">Notify Me</button>
-          </div>
+              <p>
+                This analysis examines police traffic stop data to uncover
+                patterns, identify hotspots, and evaluate enforcement trends.
+                Insights help improve public safety, reduce congestion, and
+                inform policy decisions.
+              </p>
+
+              <ul className="insightsList">
+                <li>
+                  <FaMapMarkedAlt
+                    style={{ color: "#ff6a00", marginRight: "0.5rem" }}
+                  />
+                  <strong>Location Hotspots:</strong> Identify high-frequency
+                  traffic stop areas.
+                </li>
+                <li>
+                  <FaClock
+                    style={{ color: "#ff6a00", marginRight: "0.5rem" }}
+                  />
+                  <strong>Time Patterns:</strong> Analyze time-of-day and
+                  day-of-week trends.
+                </li>
+                <li>
+                  <FaUserCheck
+                    style={{ color: "#ff6a00", marginRight: "0.5rem" }}
+                  />
+                  <strong>Demographics:</strong> Evaluate stop statistics across
+                  age, gender, and vehicle type.
+                </li>
+              </ul>
+
+              <button className="notifyMe">Notify Me</button>
+            </div>
+          </a>
           <div className="main3">
             <h3>
               <FaChartLine

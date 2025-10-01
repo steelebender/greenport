@@ -14,7 +14,9 @@ function Home() {
           <div className="overlay">
             <Menu />
             <div className="iam">
-              <div className="main">
+              <div
+                className="main"
+                style={{ maxWidth: "1200px", margin: "0 auto" }}>
                 <h1>I am a: </h1>
                 <ul>
                   <li>Bilingual</li>

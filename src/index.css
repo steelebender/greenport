@@ -1,62 +1,93 @@
-* {
-  margin: 0;
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* ensures padding doesn't overflow */
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden; /* prevent right-side dark shadow */
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 ul {
   list-style: none;
 }
+
 h2 {
   font-size: 1.4rem;
 }
+
+/* Main Body */
 .homeBody {
   min-height: 100vh;
 
   .homeBody1 {
     height: 100vh;
+    width: 100%;
     background-image: url("/IMG_2923.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 60% 0px;
+    position: relative;
+
     .overlay {
       height: 100vh;
+      width: 100%;
       background-color: rgba(0, 0, 0, 0.732);
       color: white;
+      display: flex;
+      flex-direction: column;
+
       .iam {
         height: 100vh;
         padding-top: 8vh;
+
         .main {
           height: 92vh;
           display: flex;
           flex-direction: column;
-          padding: 2% 2%;
           gap: 8vh;
+          width: 80%;
+          margin: 0 auto; /* center the content */
+
           ul {
-            padding-left: 20%;
             display: flex;
             flex-direction: column;
             gap: 10vh;
+
             li {
-              width: 90%;
               font-size: 2rem;
               cursor: pointer;
               transition: 0.2s ease-in-out;
             }
+
             li:hover {
               scale: 1.01;
               color: orange;
             }
           }
+
           h1 {
             font-size: 3rem;
+            text-align: center;
           }
         }
       }
     }
   }
+
+  /* About Me Section */
   .aboutme {
     min-height: 100vh;
     text-align: center;
@@ -64,32 +95,37 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 5vh;
+
     h1 {
       font-size: 2rem;
     }
 
     .abme,
     .abmeed {
-      border-top: none; /* remove top border */
+      border-top: none;
       height: 50vh;
       padding-top: 5vh;
       padding-right: 2vh;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.047); /* subtle bottom shadow */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.047);
       transition: all 0.3s ease;
       text-align: center;
+
       &:hover {
-        transform: translateY(-2px); /* lift effect */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.105); /* deeper shadow */
+        transform: translateY(-2px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.105);
       }
+
       p {
         font-size: 1.2rem;
         word-spacing: 2px;
         line-height: 40px;
       }
+
       ul {
         display: flex;
         flex-direction: column;
         gap: 6vh;
+
         li {
           display: flex;
           flex-direction: column;
@@ -97,14 +133,17 @@ h2 {
         }
       }
     }
+
     .abmeed {
       min-height: 70vh;
     }
   }
+
+  /* Skills Section */
   .skills {
     min-height: 180vh;
     text-align: center;
-    padding: 0% 5%;
+    padding: 0 5%;
     display: flex;
     flex-direction: column;
     gap: 5vh;
@@ -114,17 +153,17 @@ h2 {
     }
 
     .abme {
-      border-top: none; /* remove top border */
+      border-top: none;
       min-height: 160vh;
       padding-top: 5vh;
       padding-right: 2vh;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.047); /* subtle bottom shadow */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.047);
       transition: all 0.3s ease;
       text-align: center;
 
       &:hover {
-        transform: translateY(-2px); /* lift effect */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.105); /* deeper shadow */
+        transform: translateY(-2px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.105);
       }
 
       p {
@@ -138,6 +177,8 @@ h2 {
         flex-direction: column;
         gap: 6vh;
         text-align: left;
+        width: 80%;
+        margin: 0 auto; /* center inside container */
 
         li {
           display: flex;
@@ -145,7 +186,6 @@ h2 {
           gap: 2vh;
           font-size: 1.4rem;
 
-          /* skill bar */
           .skill-bar {
             background: #e0e0e0;
             border-radius: 2px;
@@ -163,47 +203,59 @@ h2 {
       }
     }
   }
+
+  /* Projects Section */
   .projects {
     min-height: 180vh;
     text-align: center;
-    padding: 0% 5%;
+    padding: 0 5%;
     display: flex;
     flex-direction: column;
     gap: 5vh;
+
     .abmeChef,
     .abmeQuiz,
     .abmeWeather,
     .abmeNews {
       cursor: pointer;
-      background-image: url("/Screenshot 2025-09-06 at 9.38.18 AM.png");
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: 0px 73%;
-      border-top: none; /* remove top border */
+      border-top: none;
       min-height: 30vh;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.047); /* subtle bottom shadow */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.047);
       transition: all 0.3s ease;
       text-align: left;
+      width: 100%;
+      max-width: 100%;
+      position: relative;
+
       .overlay {
         height: 30vh;
         width: 100%;
-        padding: 2% 5%;
+        padding: 2% 0; /* removed 5% side padding to avoid overflow */
         color: white;
         transition: 0.5s;
+
+        .inner {
+          padding: 0 5%; /* inner wrapper for content */
+        }
 
         h3 {
           display: none;
           transition: 0.5s;
+
           p {
             font-size: 0.8rem;
             line-height: 40px;
             color: gray;
           }
         }
+
         ul {
           display: flex;
           flex-direction: column;
           gap: 6vh;
+
           li {
             display: flex;
             flex-direction: column;
@@ -211,25 +263,36 @@ h2 {
           }
         }
       }
+
       &:hover {
-        transform: translateY(-2px); /* lift effect */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.105); /* deeper shadow */
+        transform: translateY(-2px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.105);
+
         .overlay {
           background-color: rgba(0, 0, 0, 0.84);
+
           h3 {
             display: contents;
           }
         }
       }
     }
+
+    .abmeChef {
+      background-image: url("/Screenshot 2025-09-06 at 9.38.18 AM.png");
+      background-position: 0px 73%;
+    }
+
     .abmeQuiz {
       background-image: url("/Screenshot 2025-09-06 at 11.22.34 AM.png");
       background-position: 0px 13%;
     }
+
     .abmeWeather {
       background-image: url("/Screenshot 2025-09-10 at 1.49.02 PM.png");
       background-position: 0px 13%;
     }
+
     .abmeNews {
       background-image: url("/Screenshot 2025-09-10 at 1.52.42 PM.png");
       background-position: 0px 13%;

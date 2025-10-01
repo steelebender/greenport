@@ -43,7 +43,7 @@
 
   .sideMenu {
     position: fixed;
-    right: -250px;
+    right: -350px;
     width: 250px;
     height: 50vh;
     background: rgba(128, 0, 32, 0.25); /* lighter transparent burgundy */
