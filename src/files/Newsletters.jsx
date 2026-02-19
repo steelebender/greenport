@@ -19,13 +19,10 @@ function Newsletters() {
       <div className="newsContainer">
         <Menu />
         <Banner />
-        {/* Back Button */}
-        <a href="/greenport/">
-          {" "}
-          <div className="butts">
-            <button id="back">← Back To Home</button>
-          </div>
-        </a>{" "}
+        {/* Back Button */}{" "}
+        <div className="butts">
+          <button id="back">← Back To Home</button>
+        </div>
         <section className="newsContent">
           {/* Heading Section */}
           <div className="heading">
@@ -43,52 +40,9 @@ function Newsletters() {
           </div>
 
           {/* Main 1 */}
-          <div className="main1">
-            <h3>
-              <FaChartLine
-                style={{ marginRight: "0.5rem", color: "#ff6a00" }}
-              />
-              Walmart Sales Data Analysis
-            </h3>
-            <span>Updated Monthly | Business Intelligence</span>
-
-            <p>
-              This analysis explores Walmart's sales performance across regions
-              and product categories. Using analytics, we uncover trends,
-              seasonal patterns, and actionable insights to optimize operations
-              and drive strategy.
-            </p>
-
-            <ul className="insightsList">
-              <li>
-                <FaDollarSign
-                  style={{ color: "#ff6a00", marginRight: "0.5rem" }}
-                />
-                <strong>Revenue Trends:</strong> Observe monthly revenue growth
-                and identify top-performing categories.
-              </li>
-              <li>
-                <FaShoppingCart
-                  style={{ color: "#ff6a00", marginRight: "0.5rem" }}
-                />
-                <strong>Sales Volume:</strong> Track units sold across regions
-                and product lines.
-              </li>
-              <li>
-                <FaRegClock
-                  style={{ color: "#ff6a00", marginRight: "0.5rem" }}
-                />
-                <strong>Seasonality:</strong> Spot seasonal spikes and dips to
-                plan inventory efficiently.
-              </li>
-            </ul>
-
-            <button className="notifyMe">Read More</button>
-          </div>
-
-          <a href="https://steelebender.github.io/policerep/">
+          <a href="https://clementarhin121.github.io/greenpolice/">
             {" "}
-            <div className="main2">
+            <div className="main1">
               <h3>
                 <FaChartLine
                   style={{ marginRight: "0.5rem", color: "#ff6a00" }}
@@ -131,6 +85,49 @@ function Newsletters() {
               <button className="notifyMe">Notify Me</button>
             </div>
           </a>
+          <div className="main2">
+            <h3>
+              <FaChartLine
+                style={{ marginRight: "0.5rem", color: "#ff6a00" }}
+              />
+              Walmart Sales Data Analysis
+            </h3>
+            <span>Updated Monthly | Business Intelligence</span>
+
+            <p>
+              This analysis explores Walmart's sales performance across regions
+              and product categories. Using analytics, we uncover trends,
+              seasonal patterns, and actionable insights to optimize operations
+              and drive strategy.
+            </p>
+
+            <ul className="insightsList">
+              <li>
+                <FaDollarSign
+                  style={{ color: "#ff6a00", marginRight: "0.5rem" }}
+                />
+                <strong>Revenue Trends:</strong> Observe monthly revenue growth
+                and identify top-performing categories.
+              </li>
+              <li>
+                <FaShoppingCart
+                  style={{ color: "#ff6a00", marginRight: "0.5rem" }}
+                />
+                <strong>Sales Volume:</strong> Track units sold across regions
+                and product lines.
+              </li>
+              <li>
+                <FaRegClock
+                  style={{ color: "#ff6a00", marginRight: "0.5rem" }}
+                />
+                <strong>Seasonality:</strong> Spot seasonal spikes and dips to
+                plan inventory efficiently.
+              </li>
+            </ul>
+
+            <button className="notifyMe">Read More</button>
+          </div>
+
           <div className="main3">
             <h3>
               <FaChartLine
@@ -185,12 +182,9 @@ function Newsletters() {
             }}
           />
         </section>
-        <a href="/greenport/">
-          {" "}
-          <div className="butts">
-            <button id="back">← Back To Home</button>
-          </div>
-        </a>{" "}
+        <div className="butts">
+          <button id="back">← Back To Home</button>
+        </div>
         <br />
         <br />
         <Footer />
