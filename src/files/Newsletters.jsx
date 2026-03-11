@@ -21,8 +21,9 @@ function Newsletters() {
         <Banner />
         {/* Back Button */}{" "}
         <div className="butts">
-          <a href="https://clementarhin121.github.io/greenport/"></a>
-          <button id="back">← Back To Home</button>
+          <a href="index.html">
+            <button id="back">← Back To Home</button>
+          </a>
         </div>
         <section className="newsContent">
           {/* Heading Section */}
@@ -184,8 +185,9 @@ function Newsletters() {
           />
         </section>
         <div className="butts">
-          <a href="https://clementarhin121.github.io/greenport/"></a>
-          <button id="back">← Back To Home</button>
+          <a href="index.html">
+            <button id="back">← Back To Home</button>
+          </a>
         </div>
         <br />
         <br />
