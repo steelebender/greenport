@@ -11,6 +11,7 @@ import {
   FaMapMarkedAlt,
   FaClock,
   FaUserCheck,
+  FaCheckCircle,
 } from "react-icons/fa";
 
 function Newsletters() {
@@ -49,23 +50,15 @@ function Newsletters() {
                 />
                 Police Traffic Stop Analysis
               </h3>
-              <span>Updated Monthly | Public Safety Intelligence</span>
+              <span> Public Safety Intelligence</span>
 
               <p>
                 This analysis examines police traffic stop data to uncover
-                patterns, identify hotspots, and evaluate enforcement trends.
-                Insights help improve public safety, reduce congestion, and
-                inform policy decisions.
+                patterns and evaluate enforcement trends. Insights help improve
+                public safety, reduce congestion, and inform public decisions.
               </p>
 
               <ul className="insightsList">
-                <li>
-                  <FaMapMarkedAlt
-                    style={{ color: "#ff6a00", marginRight: "0.5rem" }}
-                  />
-                  <strong>Location Hotspots:</strong> Identify high-frequency
-                  traffic stop areas.
-                </li>
                 <li>
                   <FaClock
                     style={{ color: "#ff6a00", marginRight: "0.5rem" }}
@@ -78,7 +71,14 @@ function Newsletters() {
                     style={{ color: "#ff6a00", marginRight: "0.5rem" }}
                   />
                   <strong>Demographics:</strong> Evaluate stop statistics across
-                  age, gender, and vehicle type.
+                  age, gender.
+                </li>
+                <li>
+                  <FaCheckCircle
+                    style={{ color: "#ff6a00", marginRight: "0.5rem" }}
+                  />
+                  <strong>Stop Outcomes:</strong> Examine results of stops such
+                  as warnings, citations, and arrests.
                 </li>
               </ul>
 
@@ -92,7 +92,7 @@ function Newsletters() {
               />
               Walmart Sales Data Analysis
             </h3>
-            <span>Updated Monthly | Business Intelligence</span>
+            <span>Business Intelligence</span>
 
             <p>
               This analysis explores Walmart's sales performance across regions
@@ -135,7 +135,7 @@ function Newsletters() {
               />
               Life Expectancy Data Analysis
             </h3>
-            <span>Updated Monthly | Global Health Insights</span>
+            <span>Global Health Insights</span>
 
             <p>
               This project explores global life expectancy trends using health,
