@@ -21,9 +21,7 @@ function Newsletters() {
         <Banner />
         {/* Back Button */}{" "}
         <div className="butts">
-          <a href="index.html">
-            <button id="back">← Back To Home</button>
-          </a>
+          <button id="back">← Back To Home</button>
         </div>
         <section className="newsContent">
           {/* Heading Section */}
@@ -42,7 +40,7 @@ function Newsletters() {
           </div>
 
           {/* Main 1 */}
-          <a href="https://clementarhin121.github.io/greenpolice/">
+          <a href="https://steelebender.github.io/greenpolice/">
             {" "}
             <div className="main1">
               <h3>
@@ -185,9 +183,7 @@ function Newsletters() {
           />
         </section>
         <div className="butts">
-          <a href="index.html">
-            <button id="back">← Back To Home</button>
-          </a>
+          <button id="back">← Back To Home</button>
         </div>
         <br />
         <br />
