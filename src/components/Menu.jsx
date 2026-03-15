@@ -43,13 +43,6 @@ function Menu() {
       </ul>
 
       {/* Burger */}
-      <div
-        className="burger"
-        onClick={() => setOpen(!open)}>
-        <div className={`line ${open ? "open" : ""}`}></div>
-        <div className={`line ${open ? "open" : ""}`}></div>
-        <div className={`line ${open ? "open" : ""}`}></div>
-      </div>
 
       {/* Mobile Menu */}
       <div className={`sideMenu ${open ? "show" : ""}`}>

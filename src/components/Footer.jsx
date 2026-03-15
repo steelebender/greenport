@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className="footerContainer">
       <p>
-        © {year} Clement <br />
+        © {year} Steele Bender <br />
         <br /> All rights reserved.
       </p>
       <div className="socialIcons">
