@@ -85,6 +85,47 @@ function Newsletters() {
               <button className="notifyMe">Notify Me</button>
             </div>
           </a>
+          <div className="main3">
+            <h3>
+              <FaChartLine
+                style={{ marginRight: "0.5rem", color: "#ff6a00" }}
+              />
+              Life Expectancy Data Analysis
+            </h3>
+            <span>Global Health Insights</span>
+
+            <p>
+              This project explores global life expectancy trends using health,
+              demographic, and socio-economic data. The analysis highlights the
+              factors influencing longevity across different regions, enabling
+              better understanding of public health priorities and future
+              outcomes.
+            </p>
+
+            <ul className="insightsList">
+              <li>
+                <FaMapMarkedAlt
+                  style={{ color: "#ff6a00", marginRight: "0.5rem" }}
+                />
+                <strong>Regional Variations:</strong> Compare life expectancy
+                across countries and continents.
+              </li>
+              <li>
+                <FaClock style={{ color: "#ff6a00", marginRight: "0.5rem" }} />
+                <strong>Time Trends:</strong> Track improvements in longevity
+                over decades.
+              </li>
+              <li>
+                <FaUserCheck
+                  style={{ color: "#ff6a00", marginRight: "0.5rem" }}
+                />
+                <strong>Key Factors:</strong> Evaluate the impact of healthcare,
+                income, and lifestyle on life expectancy.
+              </li>
+            </ul>
+
+            <button className="notifyMe">Notify Me</button>
+          </div>
           <div className="main2">
             <h3>
               <FaChartLine
@@ -128,47 +169,6 @@ function Newsletters() {
             <button className="notifyMe">Read More</button>
           </div>
 
-          <div className="main3">
-            <h3>
-              <FaChartLine
-                style={{ marginRight: "0.5rem", color: "#ff6a00" }}
-              />
-              Life Expectancy Data Analysis
-            </h3>
-            <span>Global Health Insights</span>
-
-            <p>
-              This project explores global life expectancy trends using health,
-              demographic, and socio-economic data. The analysis highlights the
-              factors influencing longevity across different regions, enabling
-              better understanding of public health priorities and future
-              outcomes.
-            </p>
-
-            <ul className="insightsList">
-              <li>
-                <FaMapMarkedAlt
-                  style={{ color: "#ff6a00", marginRight: "0.5rem" }}
-                />
-                <strong>Regional Variations:</strong> Compare life expectancy
-                across countries and continents.
-              </li>
-              <li>
-                <FaClock style={{ color: "#ff6a00", marginRight: "0.5rem" }} />
-                <strong>Time Trends:</strong> Track improvements in longevity
-                over decades.
-              </li>
-              <li>
-                <FaUserCheck
-                  style={{ color: "#ff6a00", marginRight: "0.5rem" }}
-                />
-                <strong>Key Factors:</strong> Evaluate the impact of healthcare,
-                income, and lifestyle on life expectancy.
-              </li>
-            </ul>
-
-            <button className="notifyMe">Notify Me</button>
-          </div>
           <hr
             style={{
               width: "100%", // full container width
